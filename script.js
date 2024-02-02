@@ -15,9 +15,9 @@ function encriptar() {
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "Texto encriptado con exito";
         parrafo.textContent = "";
-        muneco.src = "./img/encriptado.jpg";
+        muneco.src = "./img/kittyEncriptado.jpg";
     } else {
-        muneco.src = "./img/muneco.png";
+        muneco.src = "./img/kitty.jpg";
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         alert("Debes ingresar algun texto");
@@ -41,11 +41,16 @@ function desencriptar() {
         document.getElementById("texto").value = textoCifrado;
         tituloMensaje.textContent = "Texto desencriptado con éxito";
         parrafo.textContent = "";
-        muneco.src = "./img/desencriptado.jpg";
+        muneco.src = "./img/kittyDesencriptado.jpg";
       } else {
-        muneco.src = "./img/muneco.png";
+        muneco.src = "./img/kitty.jpg";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         alert("Debes ingresar algun texto");
       }
-  }
+}
+function limpiarTexto() {
+    let muneco = document.getElementById("muneco");
+    muneco.src = "./img/kitty.jpg";
+    document.getElementById("texto").value = "";
+}

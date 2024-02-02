@@ -7,7 +7,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: #f3f5fc;
+    background: #efe8ec;
 }
 
 .texto {
@@ -22,11 +22,11 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    background-color: #f3f5fc;
+    background-color: #efe8ec;
 }
 
 .texto::placeholder {
-    color: #0a3871;
+    color: #967dbe;
 }
 
 .texto:focus,
@@ -52,7 +52,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    color: #495057;
+    color: #9990c7;
     opacity: 0.8;
     flex: none;
     order: 1;
@@ -66,7 +66,7 @@
     padding: 1% 0;
     position: absolute;
     width: 80%;
-    left: 10%;
+    left: 1%;
     top: 82%;
 }
 
@@ -76,7 +76,7 @@
     padding: 2%;
     gap: 8px;
     width: 25%;
-    background-color: #0a3871;
+    background-color: #fda0ce;
     border-radius: 24px;
     font-family: "Inter";
     line-height: 19px;
@@ -93,21 +93,41 @@
     padding: 2%;
     gap: 8px;
     width: 25%;
-    background: #d8dfe8;
-    border: 1px solid #0a3871;
+    background: #efe8ec;
+    border: 1px solid #fda0ce;
     border-radius: 24px;
     font-family: "Inter";
     font-weight: 400;
     font-size: 18px;
     line-height: 19px;
     text-align: center;
-    color: #0a3871;
+    color: #fda0ce;
+}
+
+.btn-limpiar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 15%;
+    background-color: #fda0ce;
+    border-radius: 24px;
+    font-family: "Inter";
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
 }
 
 .btn-desencriptar:hover,
-.btn-encriptar:hover {
+.btn-encriptar:hover{
     margin: 0.3%;
     width: 24.5%;
+    padding: 1.8%;
+}
+
+.btn-limpiar:hover {
+    margin: 0.3%;
+    width: 14.5%;
     padding: 1.8%;
 }
 
@@ -145,7 +165,7 @@
     font-size: 24px;
     line-height: 120%;
     text-align: center;
-    color: #343a40;
+    color: #967dbe;
 }
 
 .mensaje-encriptado p {
@@ -200,12 +220,12 @@
         top: 70%;
     }
 
-    .btn-encriptar, .btn-desencriptar {
+    .btn-encriptar, .btn-desencriptar, .btn-limpiar {
         width: 48%;
         border-radius: 16px;
     }
 
-    .btn-encriptar:hover, .btn-desencriptar:hover {
+    .btn-encriptar:hover, .btn-desencriptar:hover, .btn-limpiar:hover{
         margin: 0.3%;
         width: 47.5%;
         padding: 1.8%;
