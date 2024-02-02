@@ -44,13 +44,31 @@ function desencriptar() {
         muneco.src = "./img/kittyDesencriptado.jpg";
       } else {
         muneco.src = "./img/kitty.jpg";
-        tituloMensaje.textContent = "Ningún mensaje fue encontrado";
+        tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         alert("Debes ingresar algun texto");
       }
 }
 function limpiarTexto() {
     let muneco = document.getElementById("muneco");
+    let parrafo = document.getElementById("parrafo");
+    let tituloMensaje = document.getElementById("titulo-mensaje");
+
     muneco.src = "./img/kitty.jpg";
     document.getElementById("texto").value = "";
+    parrafo.textContent = "";
+    tituloMensaje.textContent = "Ingrese el texto que deseas encriptar o desencriptar";
 }
+
+async function copiarTexto() {
+    var texto = document.getElementById("texto").value;
+    
+    try {
+      await navigator.clipboard.writeText(texto);
+      alert("Texto copiado: " + texto);
+    } catch (err) {
+      console.error('Error al copiar el texto: ', err);
+    }
+  }
+  
+  
